@@ -146,3 +146,141 @@ body {
     text-align: center;
   }
 }
+
+.main {
+  width: 100%;
+  background-color: $white;
+  height: 100%;
+
+  &__inner {
+    max-width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
+.news {
+  margin-top: 99px;
+  display: flex;
+  flex-wrap: wrap;
+  
+  &__title {
+    width: 100%;
+    font-family: $mainFont;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: $base-color;
+    margin-bottom: 15px;
+  }
+  &__article {
+    height: 343px;
+    width: 470px;
+    background: url(../img/1344287851_w640_h640_33_107.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    margin-right: 29px;
+    
+    &-title {
+      font-family: $secondFont;
+      font-size: 20px;
+      font-weight: black;
+      line-height: 27px;
+      margin-top: 238px;
+      margin-left: 23px;
+      margin-bottom: 10px;
+    }
+    &-description {
+      font-family: $mainFont;
+      margin-top: 0px;
+      width: 416px;
+      margin-left: 23px;
+      font-size: 14px;
+      line-height: 21px;
+      text-align: left;
+    }
+  }
+}
+
+.aside-article {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  padding: 0px;
+  width: 500px;
+  flex-wrap: nowrap;
+  align-items: center;
+  &__img {
+    display: block;
+    width: 127px;
+    height: 91px;
+  }
+  &:last-of-type {
+    margin-bottom: 0px;
+  }
+}
+
+.article-content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 12px;
+
+  &__title {
+    height: 100%;
+    width: 132px;
+    font-family: $secondFont;
+    font-size: 14px;
+    text-align: left;
+    margin-left: 12px;
+    margin: 0px;
+  }
+  &__description {
+    font-family: $mainFont;
+    margin: 10px 0 0 0;
+    width: 132px;
+    height: 100%;
+    text-align: left;
+    font-size: 10px;
+    line-height: 150%;
+  }
+}
+
+.highlight {
+  color: $highlight-color;
+}
+
+.aside {
+  margin-top: -4px;
+  margin-bottom: -4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.events-block {
+  width: 370px;
+  height: 479px;
+  background: url(../img/drew-colins-1114440-unsplash.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  &__title {
+    width: 235px;
+    color: $base-color;
+    font-family: $secondFont;
+    font-size: 30px;
+    font-weight: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  &__link {
+    &-arrow {
+      width: 16px;
+      height: 16px;
+      background: url(../img/arrow-forward.svg) no-repeat;
+    }
+  }
+}
