@@ -8,9 +8,9 @@
   <link href="css/style.css" rel="stylesheet">
   <title>Новости Культуры</title>
 </head>
-<body>
-  <header class="header">
-    <div class="header__inner">
+<body class="page">
+  <div class="page__inner">
+    <header class="header">
       <h1 class="header__title">Новости культуры</h1>
       <nav class="header__nav">
         <a href="#" class="header__nav-link">Новости</a>
@@ -23,59 +23,83 @@
         <a href="#" class="header__nav-link">Религия</a>
         <a href="#" class="header__nav-link">Живопись</a>
       </nav>
-    </div>
-  </header>
-  <section class="hero">
-    <div class="hero__inner">
-      <h2 class="hero__sub-title">Новое</h2>
+    </header>
+    <section class="hero">
+      <h2 class="hero__new">Новое</h2>
       <h1 class="hero__title">Подводный Отель</h1>
       <nav class="hero__nav">
-        <a class="hero__nav-previous">Предыдущая</a>
-        <a class="hero__nav-arrow"></a>
-        <a class="hero__nav-next">Следующая</a>
+        <a href="#" class="hero__nav-link">Предыдущая</a>
+        <a href="#" class="hero__nav-link"></a>
+        <a href="#" class="hero__nav-link"></a>
+        <a href="#" class="hero__nav-link">Следующая</a>
       </nav>
-      <p class="hero__description">
-        Как известно, Дубай – город контрастов. Самые революционные и фантастические мечты архитекторов способен воплотить в жизнь этот мегаполис, построенный на нефти и за счет нефти
-      </p>
-    </div>
-  </section>
-  <section class="main">
-    <div class="main__inner">
-      <div class="news">
-        <h2 class="news__title">Новости</h2>
-        <article class="news__article">
-          <h2 class="news__article-title">Новости культуры России и всего мира</h2>
-          <p class="news__article-description">В минувшие выходные в Москве на фестивале «Оберег» вручили первую премию Russian World Music Awards</p>
+    </section>
+    <section class="content">
+      <article class="content__news">
+        <h1 class="content__news-title">Новости</h1>
+        <div class="news">
+          <article class="news__main">
+            <h1 class="news__main-title">Новости культуры России и всего мира</h1>
+            <p class="news__main-description">В минувшие выходные в Москве на фестивале «Оберег» вручили первую премию Russian World Music Awards</p>
+          </article>
+          <div class="other-news">
+            <article class="other-news__article">
+              <img src="./img/leonov.jpg" alt="Evgeniy Leonov" class="other-news__article-img">
+              <h1 class="other-news__article-title">Открытие нового памятника Евгению Леонову</h1>
+              <p class="other-news__article-description">10 сентября в 15:00 был открыт памятник писателю</p>
+            </article>
+            <article class="other-news__article">
+              <img src="./img/writer.jpg" alt="Writer" class="other-news__article-img">
+              <h1 class="other-news__article-title highlight">Беседы с писателями</h1>
+              <p class="other-news__article-description">Русские писатели говорят о важности искусства</p>
+            </article>
+            <article class="other-news__article">
+              <img src="./img/patrick.jpg" alt="St.Patrick" class="other-news__article-img">
+              <h1 class="other-news__article-title">День и ночь св. Патрика: встреча старых друзей</h1>
+              <p class="other-news__article-description">Не Джойсом единым живет Ирландия!</p>
+            </article>
+          </div>
+        </div>
+      </article>
+      <div class="reviews">
+        <h1 class="reviews__title">Обзоры</h1>
+        <article class="reviews__article">
+          <img src="" alt="" class="article__img">
+          <h1 class="article__title"></h1>
+          <p class="article__description"></p>
         </article>
+        <article class="reviews__article">
+          <img src="" alt="" class="article__img">
+          <h1 class="article__title"></h1>
+          <p class="article__description"></p>
+        </article>
+        <article class="reviews__article">
+          <img src="" alt="" class="article__img">
+          <h1 class="article__title"></h1>
+          <p class="article__description"></p>
+        </article>
+        <article class="reviews__article">
+          <img src="" alt="" class="article__img">
+          <h1 class="article__title"></h1>
+          <p class="article__description"></p>
+        </article>
+        <nav class="reviews__pagination"></nav>
+      </div>
       <aside class="aside">
-        <div class="aside-article">
-          <img src="./img/leonov.jpg" alt="Leonov" class="aside-article__img">
-          <div class="article-content">
-            <h2 class="article-content__title">Открытие нового памятника Евгению Леонову</h2>
-            <p class="article-content__description">10 сентября в 15:00 был открыт памятник писателю</p>
-          </div>
-        </div>
-        <div class="aside-article">
-          <img src="./img/writer.jpg" alt="Talks with the Writer" class="aside-article__img">
-          <div class="article-content">
-            <h2 class="article-content__title highlight">Беседы с писателями</h2>
-            <p class="article-content__description">Русские писатели говорят о важности искусства</p>
-          </div>
-        </div>
-        <div class="aside-article">
-          <img src="./img/patrick.jpg" alt="St.Patrick" class="aside-article__img">
-          <div class="article-content">
-            <h2 class="article-content__title">День и ночь св. Патрика: встреча старых друзей</h2>
-            <p class="article-content__description">Не Джойсом единым живет Ирландия!</p>
-          </div>
-        </div>
+        <article class="event">
+          <h1 class="event__title dark">Воздушные шары</h1>
+          <a href="#" class="event__link-button">Смотреть</a>
+        </article>
+        <article class="event">
+          <h1 class="event__title">Необычная фотосессия</h1>
+          <a href="#" class="event__link-button">Смотреть</a>
+        </article>
+        <article class="event">
+          <h1 class="event__title">Выставка птиц</h1>
+          <a href="#" class="event__link-button">Смотреть</a>
+        </article>
       </aside>
-      </div>
-      <div class="events-block">
-        <h1 class="events-block__title">Воздушные шары</h1>
-        <a class="events-block__link">Смотреть<span class="events-block__link-arrow"></span></a>
-      </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </body>
 </html>
