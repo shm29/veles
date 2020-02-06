@@ -9,34 +9,36 @@
   <title>Новости Культуры</title>
 </head>
 <body class="page">
-  <div class="page__inner">
-    <header class="header">
-      <h1 class="header__title">Новости культуры</h1>
-      <nav class="navigation">
-        <a href="#" class="navigation__link">Новости</a>
-        <a href="#" class="navigation__link">Обзоры</a>
-        <a href="#" class="navigation__link">Музыка</a>
-        <a href="#" class="navigation__link">Архитектура</a>
-        <a href="#" class="navigation__link">Кино</a>
-        <a href="#" class="navigation__link">Театр</a>
-        <a href="#" class="navigation__link">Литература</a>
-        <a href="#" class="navigation__link">Религия</a>
-        <a href="#" class="navigation__link">Живопись</a>
-      </nav>
-    </header>
-    <section class="hero">
+  <header class="header">
+    <h1 class="header__title">Новости культуры</h1>
+    <nav class="navigation">
+      <a href="#" class="navigation__link">Новости</a>
+      <a href="#" class="navigation__link">Обзоры</a>
+      <a href="#" class="navigation__link">Музыка</a>
+      <a href="#" class="navigation__link">Архитектура</a>
+      <a href="#" class="navigation__link">Кино</a>
+      <a href="#" class="navigation__link">Театр</a>
+      <a href="#" class="navigation__link">Литература</a>
+      <a href="#" class="navigation__link">Религия</a>
+      <a href="#" class="navigation__link">Живопись</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <article class="hero__inner">
       <h2 class="hero__new">Новое</h2>
       <h1 class="hero__title">Подводный Отель</h1>
       <nav class="hero__nav">
-        <a href="#" class="hero__nav-link">Предыдущая</a>
-        <a href="#" class="hero__nav-link"></a>
-        <a href="#" class="hero__nav-link"></a>
-        <a href="#" class="hero__nav-link">Следующая</a>
+        <a href="#" class="hero__nav-link previous">Предыдущая</a>
+        <a href="#" class="hero__nav-arrow"></a>
+        <a href="#" class="hero__nav-link next">Следующая</a>
       </nav>
-    </section>
+      <p class="hero__description">Как известно, Дубай – город контрастов. Самые революционные и фантастические мечты архитекторов способен воплотить в жизнь этот мегаполис, построенный на нефти и за счет нефти</p>
+    </article>
+  </section>
+  <div class="page__inner">
     <section class="content">
-      <article class="content__news">
-        <h1 class="content__news-title">Новости</h1>
+      <div class="content__inner">
+        <h1 class="content__title">Новости</h1>
         <div class="news">
           <article class="news__main">
             <h1 class="news__main-title">Новости культуры России и всего мира</h1>
@@ -45,62 +47,71 @@
           <div class="other-news">
             <article class="other-news__article">
               <img src="./img/leonov.jpg" alt="Evgeniy Leonov" class="other-news__article-img">
-              <h1 class="other-news__article-title">Открытие нового памятника Евгению Леонову</h1>
-              <p class="other-news__article-description">10 сентября в 15:00 был открыт памятник писателю</p>
+              <div class="article-content">
+                <h1 class="article-content__title">Открытие нового памятника Евгению Леонову</h1>
+                <p class="article-content__description">10 сентября в 15:00 был открыт памятник писателю</p>
+              </div>
             </article>
             <article class="other-news__article">
               <img src="./img/writer.jpg" alt="Writer" class="other-news__article-img">
-              <h1 class="other-news__article-title highlight">Беседы с писателями</h1>
-              <p class="other-news__article-description">Русские писатели говорят о важности искусства</p>
+              <div class="article-content">
+                <h1 class="article-content__title highlight">Беседы с писателями</h1>
+                <p class="article-content__description">Русские писатели говорят о важности искусства</p>
+              </div>
             </article>
             <article class="other-news__article">
               <img src="./img/patrick.jpg" alt="St.Patrick" class="other-news__article-img">
-              <h1 class="other-news__article-title">День и ночь св. Патрика: встреча старых друзей</h1>
-              <p class="other-news__article-description">Не Джойсом единым живет Ирландия!</p>
+              <div class="article-content">
+                <h1 class="article-content__title">День и ночь св. Патрика: встреча старых друзей</h1>
+                <p class="article-content__description">Не Джойсом единым живет Ирландия!</p>
+              </div>
             </article>
           </div>
         </div>
-      </article>
-      <div class="reviews">
-        <h1 class="reviews__title">Обзоры</h1>
-        <article class="reviews__article">
-          <img src="" alt="" class="article__img">
-          <h1 class="article__title">«Шальные годы» Монпарнаса</h1>
-          <p class="article__description">В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»</p>
-        </article>
-        <article class="reviews__article">
-          <img src="" alt="" class="article__img">
-          <h1 class="article__title">Анатомия за 30 секунд</h1>
-          <p class="article__description">Сейчас, когда мир открыт нараспашку для человека и его познавательных изысканий, интерес к научно-популярной литературе заметно вырос</p>
-        </article>
-        <article class="reviews__article">
-          <img src="" alt="" class="article__img">
-          <h1 class="article__title">Русские балетные сезоны</h1>
-          <p class="article__description">В Новом Иерусалиме стартовал необычный культурно-развлекательный спектакль, который покажут в новом театре</p>
-        </article>
-        <article class="reviews__article">
-          <img src="" alt="" class="article__img">
-          <h1 class="article__title">Сферические чудаки</h1>
-          <p class="article__description">Корреспондентам «Культурного обозревателя» посчастливилось побывать в театре «Сфера» на премьере спектакля «Чудаки и зануды»</p>
-        </article>
-        <nav class="reviews__pagination"></nav>
-      </div>
-      <section class="banner">
-        <div class="banner__inner">
-          <h1 class="banner__title">Ох, уж этот балет</h1>
-          <a href="#" class="banner__link-button">Смотреть</a>
+        <div class="reviews">
+          <h1 class="reviews__title">Обзоры</h1>
+          <article class="reviews__article">
+            <img src="./img/monparnas.jpg" alt="«Шальные годы» Монпарнаса" class="reviews__article-img">
+            <h1 class="reviews__article-title">«Шальные годы» Монпарнаса</h1>
+            <p class="reviews__article-description">В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»</p>
+          </article>
+          <article class="reviews__article">
+            <img src="./img/heart.jpg" alt="Анатомия за 30 секунд" class="reviews__article-img">
+            <h1 class="reviews__article-title highlight">Анатомия за 30 секунд</h1>
+            <p class="reviews__article-description">Сейчас, когда мир открыт нараспашку для человека и его познавательных изысканий, интерес к научно-популярной литературе заметно вырос</p>
+          </article>
+          <article class="reviews__article">
+            <img src="./img/russian-ballet.jpg" alt="Русские балетные сезоны" class="reviews__article-img">
+            <h1 class="reviews__article-title">Русские балетные сезоны</h1>
+            <p class="reviews__article-description">В Новом Иерусалиме стартовал необычный культурно-развлекательный спектакль, который покажут в новом театре</p>
+          </article>
+          <article class="reviews__article">
+            <img src="./img/chudaki.jpg" alt="Сферические чудаки" class="reviews__article-img">
+            <h1 class="reviews__article-title">Сферические чудаки</h1>
+            <p class="reviews__article-description">Корреспондентам «Культурного обозревателя» посчастливилось побывать в театре «Сфера» на премьере спектакля «Чудаки и зануды»</p>
+          </article>
+          <nav class="reviews__pagination"></nav>
         </div>
-      </section>
-      <aside class="aside">
+        <section class="banner">
+          <div class="banner__inner">
+            <h1 class="banner__title">Ох, уж этот балет</h1>
+            <a href="#" class="banner__link-button">Смотреть</a>
+          </div>
+        </section>
+      </div>
+      <aside class="content__aside">
         <article class="event">
+          <img src="./img/drew-colins-1114440-unsplash.jpg" alt="Ballons" class="event__img">
           <h1 class="event__title dark">Воздушные шары</h1>
           <a href="#" class="event__link-button">Смотреть</a>
         </article>
         <article class="event">
+          <img src="./img/jeremy-bishop-1114290-unsplash.jpg">
           <h1 class="event__title">Необычная фотосессия</h1>
           <a href="#" class="event__link-button">Смотреть</a>
         </article>
         <article class="event">
+          <img src="./img/bogdan-pasca-1114196-unsplash.jpg" alt="Ballons" class="event__img">
           <h1 class="event__title">Выставка птиц</h1>
           <a href="#" class="event__link-button">Смотреть</a>
         </article>
